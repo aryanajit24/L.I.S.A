@@ -1,0 +1,710 @@
+2025-05-04 07:43:32,515 - root - WARNING - 
+    MoviePy not properly configured. To use video processing features:
+    1. Install ImageMagick from https://imagemagick.org/script/download.php#windows
+    2. Add ImageMagick to your system PATH
+    3. Install moviepy: pip install moviepy
+    Error: No module named 'moviepy.editor'
+    
+2025-05-04 07:43:33,029 - __main__ - INFO - ==== AVA Document Processing Test ====
+2025-05-04 07:43:33,083 - __main__ - ERROR - Please install Tesseract OCR from: https://github.com/UB-Mannheim/tesseract/wiki
+2025-05-04 07:43:33,083 - __main__ - ERROR - And make sure it's in your system PATH
+2025-05-04 07:43:33,114 - __main__ - ERROR - Missing packages: PyMuPDF, google-generativeai, google-cloud-vision, google-cloud-videointelligence
+2025-05-04 07:43:33,114 - __main__ - ERROR - Install with: pip install PyMuPDF google-generativeai google-cloud-vision google-cloud-videointelligence
+2025-05-04 07:43:33,159 - __main__ - INFO - Initializing DataProcessor...
+2025-05-04 07:43:33,162 - root - WARNING - Missing dependencies for full document processing:
+Tesseract OCR
+Install using:
+pip install PyMuPDF pdf2image pytesseract
+And install Tesseract OCR from: https://github.com/UB-Mannheim/tesseract/wiki
+2025-05-04 07:43:33,224 - root - WARNING - Could not initialize Gemini API: module 'google.generativeai' has no attribute 'Client'
+2025-05-04 07:43:33,384 - __main__ - INFO - Processing PDF: C:\Users\yasin\Desktop\Project AVA\test_files\test_document.pdf
+2025-05-04 07:43:33,433 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,439 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,441 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,443 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,446 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,451 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,453 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,456 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,461 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,464 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,467 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,473 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,475 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,479 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,482 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,485 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,490 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,493 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,495 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,500 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,503 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,507 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,512 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,514 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,519 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,522 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,526 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,532 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,535 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,540 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,544 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,550 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,554 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,560 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,564 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,570 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,573 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,578 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,583 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,586 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,591 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,594 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,599 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,602 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,606 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,611 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,614 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,620 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,623 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,626 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,632 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,635 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,640 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,643 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,646 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,652 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,654 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,659 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,662 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,664 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,671 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,677 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,683 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,690 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,693 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,700 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,705 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,713 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,720 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,724 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,731 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,735 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,743 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,752 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,760 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,764 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,770 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,774 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,780 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,783 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,789 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,794 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,804 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,811 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,815 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,823 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,830 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,834 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,843 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,850 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,854 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,863 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,870 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,873 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,880 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,883 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,889 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,893 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,903 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,913 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,921 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,924 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,930 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,934 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,943 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,950 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,959 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,964 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,970 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,974 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,982 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,990 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:33,993 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,000 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,004 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,012 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,020 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,025 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,032 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,035 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,044 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,052 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,063 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,073 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,083 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,091 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,096 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,104 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,113 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,120 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,131 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,136 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,151 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,161 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,170 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,182 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,185 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,193 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,201 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,208 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,214 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,220 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,223 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,228 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,232 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,235 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,241 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,243 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,247 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,252 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,255 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,262 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,265 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,271 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,274 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,280 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,283 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,286 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,292 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,294 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,299 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,303 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,307 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,312 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,316 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,323 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,329 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,334 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,340 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,343 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,347 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,352 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,357 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,362 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,369 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,373 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,379 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,383 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,386 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,392 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,394 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,400 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,403 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,410 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,413 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,416 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,423 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,429 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,434 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,440 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,443 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,446 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,452 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,454 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,460 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,462 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,465 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,471 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,473 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,477 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,482 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,484 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,490 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,493 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,497 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,503 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,507 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,512 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,520 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,524 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,532 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,537 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,544 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,552 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,555 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,563 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,569 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,573 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,577 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,582 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,587 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,592 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,601 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,604 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,610 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,612 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,615 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,620 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,623 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,627 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,632 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,635 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,643 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,649 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,653 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,659 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,663 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,667 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,672 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,675 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,681 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,684 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,690 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,693 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,697 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,702 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,724 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,784 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,794 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,802 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,832 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,836 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,843 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,846 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,852 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,856 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,861 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,866 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,872 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,877 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,884 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,893 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,907 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,914 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,921 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,924 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,931 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,935 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,942 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,947 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,953 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,957 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,963 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,967 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,972 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,975 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,982 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,985 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,991 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,993 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:34,999 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,004 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,013 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,020 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,023 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,029 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,033 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,040 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,044 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,051 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,054 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,064 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,071 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,075 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,082 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,084 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,092 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,097 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,104 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,110 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,113 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,121 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,123 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,128 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,133 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,140 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,144 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,152 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,161 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,170 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,174 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,182 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,192 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,202 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,213 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,221 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,225 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,233 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,243 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,252 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,261 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,264 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,274 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,283 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,294 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,303 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,307 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,313 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,319 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,324 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,331 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,337 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,344 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,352 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,354 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,360 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,364 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,371 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,375 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,383 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,391 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,397 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,403 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,411 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,416 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,423 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,427 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,434 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,441 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,446 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,452 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,456 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,463 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,470 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,473 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,480 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,483 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,489 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,493 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,499 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,503 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,507 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,513 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,519 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,524 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,531 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,534 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,541 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,544 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,551 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,554 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,561 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,564 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,571 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,575 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,581 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,584 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,590 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,594 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,603 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,608 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,613 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,618 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,623 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,625 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,632 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,635 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,642 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,653 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,661 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,667 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,672 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,675 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,682 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,685 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,692 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,698 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,703 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,707 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,713 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,717 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,723 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,729 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,733 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,740 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,743 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,747 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,754 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,761 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,765 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,775 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,783 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,787 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,793 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,796 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,804 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,810 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,819 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,825 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,833 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,839 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,843 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,847 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,853 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,861 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,865 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,874 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,883 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,891 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,895 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,904 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,910 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,914 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,922 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,926 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,932 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,938 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,943 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,946 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,953 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,957 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,963 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,970 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,973 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,981 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,984 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,991 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:35,994 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,002 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,009 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,014 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,020 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,023 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,030 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,034 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,042 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,050 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,055 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,063 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,070 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,073 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,080 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,085 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,094 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,104 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,111 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,121 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,130 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,134 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,144 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,153 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,159 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,164 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,182 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,192 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,202 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,213 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,219 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,226 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,234 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,250 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,312 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,356 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,389 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,401 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,439 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,452 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,463 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,472 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,481 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,487 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,499 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:43:36,512 - root - ERROR - PDF fallback processing failed: maximum recursion depth exceeded
+2025-05-04 07:43:36,530 - __main__ - INFO - 
+==== Test Summary ====
+2025-05-04 07:43:36,571 - __main__ - INFO - Most common issues:
+2025-05-04 07:43:36,571 - __main__ - INFO - 1. Tesseract OCR not installed or not in PATH
+2025-05-04 07:43:36,572 - __main__ - INFO - 2. Missing dependencies (run 'pip install -r requirements.txt')
+2025-05-04 07:43:36,572 - __main__ - INFO - 3. Google API credentials not properly configured
+2025-05-04 07:52:47,214 - root - WARNING - 
+    MoviePy not properly configured. To use video processing features:
+    1. Install ImageMagick from https://imagemagick.org/script/download.php#windows
+    2. Add ImageMagick to your system PATH
+    3. Install moviepy: pip install moviepy
+    Error: No module named 'moviepy.editor'
+    
+2025-05-04 07:52:47,577 - __main__ - INFO - ==== AVA Document Processing Test ====
+2025-05-04 07:52:47,589 - __main__ - ERROR - Please install Tesseract OCR from: https://github.com/UB-Mannheim/tesseract/wiki
+2025-05-04 07:52:47,590 - __main__ - ERROR - And make sure it's in your system PATH
+2025-05-04 07:52:47,612 - __main__ - ERROR - Missing packages: PyMuPDF, google-generativeai, google-cloud-vision, google-cloud-videointelligence
+2025-05-04 07:52:47,613 - __main__ - ERROR - Install with: pip install PyMuPDF google-generativeai google-cloud-vision google-cloud-videointelligence
+2025-05-04 07:52:47,645 - __main__ - INFO - Initializing DataProcessor...
+2025-05-04 07:52:47,646 - root - WARNING - Missing dependencies for full document processing:
+Tesseract OCR
+Install using:
+pip install PyMuPDF pdf2image pytesseract
+And install Tesseract OCR from: https://github.com/UB-Mannheim/tesseract/wiki
+2025-05-04 07:52:47,704 - root - WARNING - Could not initialize Gemini API: module 'google.generativeai' has no attribute 'Client'
+2025-05-04 07:52:47,828 - __main__ - INFO - Processing PDF: C:\Users\yasin\Desktop\Project AVA\test_files\test_document.pdf
+2025-05-04 07:52:47,874 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:52:47,877 - root - ERROR - PDF fallback with pdf2image failed: Unable to get page count. Is poppler installed and in PATH?
+2025-05-04 07:52:47,878 - root - ERROR - Error in text analysis: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\yasin/nltk_data'
+    - 'C:\\Users\\yasin\\Desktop\\Project AVA\\.venv\\nltk_data'
+    - 'C:\\Users\\yasin\\Desktop\\Project AVA\\.venv\\share\\nltk_data'
+    - 'C:\\Users\\yasin\\Desktop\\Project AVA\\.venv\\lib\\nltk_data'
+    - 'C:\\Users\\yasin\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-05-04 07:52:47,881 - __main__ - INFO -   - Total pages: 0
+2025-05-04 07:52:47,882 - __main__ - INFO -   - Extracted text length: 84 characters
+2025-05-04 07:52:47,883 - __main__ - INFO - 
+==== Test Summary ====
+2025-05-04 07:52:47,896 - __main__ - INFO - Most common issues:
+2025-05-04 07:52:47,896 - __main__ - INFO - 1. Tesseract OCR not installed or not in PATH
+2025-05-04 07:52:47,896 - __main__ - INFO - 2. Missing dependencies (run 'pip install -r requirements.txt')
+2025-05-04 07:52:47,897 - __main__ - INFO - 3. Google API credentials not properly configured
+2025-05-04 07:56:54,847 - root - WARNING - 
+    MoviePy not properly configured. To use video processing features:
+    1. Install ImageMagick from https://imagemagick.org/script/download.php#windows
+    2. Add ImageMagick to your system PATH
+    3. Install moviepy: pip install moviepy
+    Error: No module named 'moviepy.editor'
+    
+2025-05-04 07:56:55,467 - __main__ - INFO - ==== AVA Document Processing Test ====
+2025-05-04 07:56:55,564 - __main__ - ERROR - Missing packages: PyMuPDF, google-generativeai, google-cloud-vision, google-cloud-videointelligence
+2025-05-04 07:56:55,564 - __main__ - ERROR - Install with: pip install PyMuPDF google-generativeai google-cloud-vision google-cloud-videointelligence
+2025-05-04 07:56:55,605 - __main__ - INFO - Initializing DataProcessor...
+2025-05-04 07:56:55,697 - root - WARNING - Could not initialize Gemini API: module 'google.generativeai' has no attribute 'Client'
+2025-05-04 07:56:55,925 - __main__ - INFO - Processing PDF: C:\Users\yasin\Desktop\Project AVA\test_files\test_document.pdf
+2025-05-04 07:56:55,972 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:56:55,974 - root - ERROR - PDF fallback with pdf2image failed: Unable to get page count. Is poppler installed and in PATH?
+2025-05-04 07:56:55,975 - root - ERROR - Error in text analysis: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\yasin/nltk_data'
+    - 'C:\\Users\\yasin\\Desktop\\Project AVA\\.venv\\nltk_data'
+    - 'C:\\Users\\yasin\\Desktop\\Project AVA\\.venv\\share\\nltk_data'
+    - 'C:\\Users\\yasin\\Desktop\\Project AVA\\.venv\\lib\\nltk_data'
+    - 'C:\\Users\\yasin\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-05-04 07:56:55,980 - __main__ - INFO -   - Total pages: 0
+2025-05-04 07:56:55,980 - __main__ - INFO -   - Extracted text length: 84 characters
+2025-05-04 07:56:55,981 - __main__ - INFO - 
+==== Test Summary ====
+2025-05-04 07:56:56,057 - __main__ - INFO - Most common issues:
+2025-05-04 07:56:56,059 - __main__ - INFO - 1. Tesseract OCR not installed or not in PATH
+2025-05-04 07:56:56,059 - __main__ - INFO - 2. Missing dependencies (run 'pip install -r requirements.txt')
+2025-05-04 07:56:56,059 - __main__ - INFO - 3. Google API credentials not properly configured
+2025-05-04 07:59:16,916 - root - WARNING - 
+    MoviePy not properly configured. To use video processing features:
+    1. Install ImageMagick from https://imagemagick.org/script/download.php#windows
+    2. Add ImageMagick to your system PATH
+    3. Install moviepy: pip install moviepy
+    Error: No module named 'moviepy.editor'
+    
+2025-05-04 07:59:17,261 - __main__ - INFO - ==== AVA Document Processing Test ====
+2025-05-04 07:59:17,320 - __main__ - ERROR - Missing packages: PyMuPDF, google-generativeai, google-cloud-vision, google-cloud-videointelligence
+2025-05-04 07:59:17,320 - __main__ - ERROR - Install with: pip install PyMuPDF google-generativeai google-cloud-vision google-cloud-videointelligence
+2025-05-04 07:59:17,347 - __main__ - INFO - Initializing DataProcessor...
+2025-05-04 07:59:17,422 - root - WARNING - Could not initialize Gemini API: module 'google.generativeai' has no attribute 'Client'
+2025-05-04 07:59:17,588 - __main__ - INFO - Processing PDF: C:\Users\yasin\Desktop\Project AVA\test_files\test_document.pdf
+2025-05-04 07:59:17,628 - root - ERROR - Error processing PDF: document closed
+2025-05-04 07:59:17,630 - root - ERROR - PDF fallback with pdf2image failed: Unable to get page count. Is poppler installed and in PATH?
+2025-05-04 07:59:17,632 - root - ERROR - Error in text analysis: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\yasin/nltk_data'
+    - 'C:\\Users\\yasin\\Desktop\\Project AVA\\.venv\\nltk_data'
+    - 'C:\\Users\\yasin\\Desktop\\Project AVA\\.venv\\share\\nltk_data'
+    - 'C:\\Users\\yasin\\Desktop\\Project AVA\\.venv\\lib\\nltk_data'
+    - 'C:\\Users\\yasin\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-05-04 07:59:17,638 - __main__ - INFO -   - Total pages: 0
+2025-05-04 07:59:17,638 - __main__ - INFO -   - Extracted text length: 84 characters
+2025-05-04 07:59:17,639 - __main__ - INFO - 
+==== Test Summary ====
+2025-05-04 07:59:17,651 - __main__ - INFO - Most common issues:
+2025-05-04 07:59:17,651 - __main__ - INFO - 1. Tesseract OCR not installed or not in PATH
+2025-05-04 07:59:17,651 - __main__ - INFO - 2. Missing dependencies (run 'pip install -r requirements.txt')
+2025-05-04 07:59:17,651 - __main__ - INFO - 3. Google API credentials not properly configured
+2025-05-04 08:02:47,679 - root - WARNING - 
+    MoviePy not properly configured. To use video processing features:
+    1. Install ImageMagick from https://imagemagick.org/script/download.php#windows
+    2. Add ImageMagick to your system PATH
+    3. Install moviepy: pip install moviepy
+    Error: No module named 'moviepy.editor'
+    
+2025-05-04 08:02:48,024 - __main__ - INFO - ==== AVA Document Processing Test ====
+2025-05-04 08:02:48,150 - __main__ - ERROR - Missing packages: PyMuPDF, google-generativeai, google-cloud-vision, google-cloud-videointelligence
+2025-05-04 08:02:48,151 - __main__ - ERROR - Install with: pip install PyMuPDF google-generativeai google-cloud-vision google-cloud-videointelligence
+2025-05-04 08:02:48,181 - __main__ - INFO - Initializing DataProcessor...
+2025-05-04 08:02:48,244 - root - WARNING - Could not initialize Gemini API: module 'google.generativeai' has no attribute 'Client'
+2025-05-04 08:02:48,375 - __main__ - INFO - Processing PDF: C:\Users\yasin\Desktop\Project AVA\test_files\test_document.pdf
+2025-05-04 08:02:48,419 - root - ERROR - Error processing PDF: document closed
+2025-05-04 08:02:48,421 - root - ERROR - PDF fallback with pdf2image failed: Unable to get page count. Is poppler installed and in PATH?
+2025-05-04 08:02:48,423 - root - ERROR - Error in text analysis: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\yasin/nltk_data'
+    - 'C:\\Users\\yasin\\Desktop\\Project AVA\\.venv\\nltk_data'
+    - 'C:\\Users\\yasin\\Desktop\\Project AVA\\.venv\\share\\nltk_data'
+    - 'C:\\Users\\yasin\\Desktop\\Project AVA\\.venv\\lib\\nltk_data'
+    - 'C:\\Users\\yasin\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-05-04 08:02:48,429 - __main__ - INFO -   - Total pages: 0
+2025-05-04 08:02:48,429 - __main__ - INFO -   - Extracted text length: 84 characters
+2025-05-04 08:02:48,430 - __main__ - INFO - 
+==== Test Summary ====
+2025-05-04 08:02:48,442 - __main__ - INFO - Most common issues:
+2025-05-04 08:02:48,442 - __main__ - INFO - 1. Tesseract OCR not installed or not in PATH
+2025-05-04 08:02:48,442 - __main__ - INFO - 2. Missing dependencies (run 'pip install -r requirements.txt')
+2025-05-04 08:02:48,442 - __main__ - INFO - 3. Google API credentials not properly configured

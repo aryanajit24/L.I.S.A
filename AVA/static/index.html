@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AVA Chat Interface</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-color: #1976d2;
+            --primary-dark: #1565c0;
+            --primary-light: #bbdefb;
+            --secondary-color: #4caf50;
+            --text-color: #333;
+            --text-secondary: #666;
+            --background: #f8f9fa;
+            --card-bg: white;
+            --border-radius: 12px;
+            --shadow: 0 4px 12px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+            --spacing: 20px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .app-container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .chat-container {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: var(--spacing);
+            margin-bottom: 20px;
+        }
+
+        .app-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .app-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin: 0;
+        }
+
+        .chat-messages {
+            height: 500px;
+            overflow-y: auto;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+            scroll-behavior: smooth;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            padding: 12px 16px;
+            border-radius: 18px;
+            max-width: 85%;
+            position: relative;
+            animation: fadeIn 0.3s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            line-height: 1.5;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .user-message {
+            background-color: var(--primary-color);
+            color: white;
+            margin-left: auto;
+            border-bottom-right-radius: 4px;
+        }
+
+        .ava-message {
+            background-color: #f0f2f5;
+            color: var(--text-color);
+            margin-right: auto;
+            border-bottom-left-radius: 4px;
+        }
+
+        .message-time {
+            font-size: 11px;
+            color: rgba(255,255,255,0.7);
+            position: absolute;
+            bottom: 4px;
+            right: 10px;
+        }
+
+        .ava-message .message-time {
+            color: var(--text-secondary);
+        }
+
+        .input-container {
+            display: flex;
+            gap: 12px;
+            position: relative;
+        }
+
+        .message-input-wrapper {
+            position: relative;
+            flex-grow: 1;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            resize: none;
+            min-height: 60px;
+            max-height: 200px;
+            font-family: inherit;
+            font-size: 15px;
+            transition: var(--transition);
+            box-sizing: border-box;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px var(--primary-light);
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        button {
+            padding: 12px 16px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            transition: var(--transition);
+            min-width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .send-button {
+            background-color: var(--secondary-color);
+        }
+
+        .send-button:hover {
+            background-color: #3d8b40;
+        }
+
+        .error {
+            color: #d32f2f;
+            margin: 10px 0;
+            padding: 12px;
+            background-color: #ffebee;
+            border-radius: var(--border-radius);
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .typing-indicator {
+            display: none;
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f0f2f5;
+            border-radius: 18px;
+            width: fit-content;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+
+        .model-status {
+            margin: 10px 0;
+            padding: 12px 15px;
+            background-color: #e8f5e9;
+            border-radius: var(--border-radius);
+            font-size: 14px;
+            color: #2e7d32;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .status-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #4caf50;
+            display: inline-block;
+        }
+
+        .status-error .status-indicator {
+            background-color: #f44336;
+        }
+
+        .status-loading .status-indicator {
+            animation: pulse 1.5s infinite;
+        }
+
+        .file-info {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 8px;
+        }
+
+        .attachment-preview {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .attachment-icon {
+            font-size: 18px;
+            color: var(--primary-color);
+        }
+
+        /* Markdown styling for responses */
+        .ava-message p {
+            margin: 0 0 10px 0;
+        }
+
+        .ava-message ul, .ava-message ol {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        .ava-message h3, .ava-message h4 {
+            margin: 15px 0 10px 0;
+        }
+
+        .ava-message pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-family: monospace;
+            font-size: 14px;
+        }
+
+        .ava-message code {
+            background: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 90%;
+        }
+
+        .ava-message table {
+            border-collapse: collapse;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        .ava-message th, .ava-message td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .ava-message th {
+            background-color: #f4f4f4;
+        }
+
+        /* Response as cards for structured data */
+        .response-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px 0;
+            overflow: hidden;
+        }
+
+        .card-header {
+            background: #f0f2f5;
+            padding: 10px 15px;
+            font-weight: 600;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .app-container {
+                padding: 0 10px;
+                margin: 10px auto;
+            }
+            
+            .chat-container {
+                padding: 15px;
+            }
+            
+            .chat-messages {
+                height: 400px;
+            }
+            
+            .message {
+                max-width: 90%;
+            }
+            
+            .button-container {
+                flex-direction: row;
+            }
+            
+            button {
+                padding: 10px;
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="chat-container">
+            <div class="app-header">
+                <h1 class="app-title">Chat with AVA</h1>
+                <div id="modelStatus" class="model-status">
+                    <span class="status-indicator"></span>
+                    <span id="statusText">Checking model status...</span>
+                </div>
+            </div>
+            
+            <div id="errorMessage" class="error"></div>
+            
+            <div class="chat-messages" id="chatMessages"></div>
+            
+            <div class="typing-indicator" id="typingIndicator">
+                <span>AVA is thinking</span>
+                <span class="typing-dots">...</span>
+            </div>
+            
+            <div class="input-container">
+                <div class="message-input-wrapper">
+                    <textarea 
+                        id="userInput"
+                        rows="2"
+                        placeholder="Ask AVA something or upload a document to analyze..."
+                    ></textarea>
+                    <div id="attachmentPreview" class="attachment-preview" style="display: none;">
+                        <span class="attachment-icon">📎</span>
+                        <span id="attachmentName"></span>
+                        <button id="removeAttachment" style="min-width: auto; padding: 3px 8px;">✕</button>
+                    </div>
+                </div>
+                
+                <div class="button-container">
+                    <input type="file" id="docInput" accept=".pdf,.docx,.doc,.txt,.rtf,.csv,.jpg,.jpeg,.png,.mp4,.avi,.mov" style="display: none;" />
+                    <button id="attachButton" onclick="document.getElementById('docInput').click()">
+                        <span>Attach</span>
+                    </button>
+                    <button id="sendButton" class="send-button" onclick="sendMessage()">
+                        <span>Send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const chatMessages = document.getElementById('chatMessages');
+        const userInput = document.getElementById('userInput');
+        const sendButton = document.getElementById('sendButton');
+        const typingIndicator = document.getElementById('typingIndicator');
+        const attachmentPreview = document.getElementById('attachmentPreview');
+        const attachmentName = document.getElementById('attachmentName');
+        const removeAttachment = document.getElementById('removeAttachment');
+        const modelStatus = document.getElementById('modelStatus');
+        const statusText = document.getElementById('statusText');
+        
+        let currentAttachment = null;
+
+        // Add initial greeting
+        window.addEventListener('load', () => {
+            addMessage("Hello! I'm AVA, your AI assistant. I can help analyze documents, images, videos, and answer your questions. How can I assist you today?", false);
+            updateModelStatus();
+            
+            // Set textarea to auto-expand
+            userInput.addEventListener('input', function() {
+                this.style.height = 'auto';
+                this.style.height = (this.scrollHeight) + 'px';
+            });
+            
+            // Allow sending with Enter key
+            userInput.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    sendMessage();
+                }
+            });
+            
+            // Handle file uploads
+            document.getElementById('docInput').addEventListener('change', handleFileUpload);
+            
+            // Handle attachment removal
+            removeAttachment.addEventListener('click', clearAttachment);
+        });
+
+        function setLoading(isLoading) {
+            sendButton.disabled = isLoading;
+            userInput.disabled = isLoading;
+            typingIndicator.style.display = isLoading ? 'block' : 'none';
+            
+            if (isLoading) {
+                sendButton.innerHTML = '<span>Sending...</span>';
+            } else {
+                sendButton.innerHTML = '<span>Send</span>';
+            }
+        }
+
+        function addMessage(message, isUser = false) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user-message' : 'ava-message'}`;
+            
+            // Format the message content with Markdown-like support
+            if (!isUser) {
+                // Simple markdown parsing for assistant messages
+                message = formatMessage(message);
+            }
+            
+            messageDiv.innerHTML = message;
+            
+            // Add timestamp
+            const timeSpan = document.createElement('span');
+            timeSpan.className = 'message-time';
+            timeSpan.textContent = new Date().toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
+            messageDiv.appendChild(timeSpan);
+            
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        function formatMessage(text) {
+            // Convert markdown-like syntax to HTML
+            // Bold
+            text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            
+            // Italic
+            text = text.replace(/\*(.*?)\*/g, '<em>$1</em>');
+            
+            // Headers
+            text = text.replace(/^### (.*?)$/gm, '<h4>$1</h4>');
+            text = text.replace(/^## (.*?)$/gm, '<h3>$1</h3>');
+            text = text.replace(/^# (.*?)$/gm, '<h2>$1</h2>');
+            
+            // Lists
+            text = text.replace(/^\- (.*?)$/gm, '<li>$1</li>');
+            text = text.replace(/(<li>.*?<\/li>)\s*(<li>)/g, '$1<li>');
+            text = text.replace(/(<li>.*?<\/li>)\s*$/g, '<ul>$1</ul>');
+            
+            // Code blocks
+            text = text.replace(/```([^`]+)```/g, '<pre><code>$1</code></pre>');
+            
+            // Inline code
+            text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
+            
+            // Paragraphs
+            text = text.replace(/\n\n/g, '</p><p>');
+            
+            // Wrap in paragraph if not already wrapped
+            if (!text.startsWith('<')) {
+                text = `<p>${text}</p>`;
+            }
+            
+            return text;
+        }
+
+        async function updateModelStatus() {
+            try {
+                modelStatus.classList.add('status-loading');
+                statusText.textContent = 'Checking model status...';
+                
+                const response = await fetch('/api/status');
+                const data = await response.json();
+                
+                modelStatus.classList.remove('status-loading');
+                
+                if (data.status === 'ready') {
+                    modelStatus.classList.remove('status-error');
+                    // Update to show Gemini 2.0 Flash specifically for better user awareness
+                    if (data.model_type.includes('flash')) {
+                        statusText.textContent = `AVA is ready (${data.model_type} - Fast Mode)`;
+                        modelStatus.style.backgroundColor = '#e3f2fd'; // Highlight fast mode with blue background
+                    } else {
+                        statusText.textContent = `AVA is ready (${data.model_type})`;
+                    }
+                } else {
+                    modelStatus.classList.add('status-error');
+                    statusText.textContent = data.message || 'Model unavailable';
+                }
+            } catch (error) {
+                modelStatus.classList.remove('status-loading');
+                modelStatus.classList.add('status-error');
+                statusText.textContent = 'Connection error';
+            }
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('errorMessage');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+            setTimeout(() => {
+                errorDiv.style.display = 'none';
+            }, 5000);
+        }
+
+        function handleFileUpload(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const maxSizeMB = 15;
+                const maxSizeBytes = maxSizeMB * 1024 * 1024;
+                
+                if (file.size > maxSizeBytes) {
+                    showError(`File is too large. Maximum size is ${maxSizeMB}MB.`);
+                    e.target.value = '';
+                    return;
+                }
+                
+                // Get file extension
+                const extension = file.name.split('.').pop().toLowerCase();
+                
+                // Check if file type is supported
+                const supportedTypes = {
+                    'documents': ['pdf', 'doc', 'docx', 'txt', 'rtf'],
+                    'images': ['jpg', 'jpeg', 'png', 'bmp', 'tiff'],
+                    'spreadsheets': ['csv', 'xlsx', 'xls'],
+                    'videos': ['mp4', 'avi', 'mov']
+                };
+                
+                const isSupported = Object.values(supportedTypes).some(types => types.includes(extension));
+                
+                if (!isSupported) {
+                    showError(`Unsupported file type: .${extension}`);
+                    e.target.value = '';
+                    return;
+                }
+                
+                // Store the file for sending
+                currentAttachment = file;
+                
+                // Show preview
+                attachmentName.textContent = file.name;
+                attachmentPreview.style.display = 'flex';
+                
+                // Update placeholder to prompt for context
+                userInput.placeholder = `Ask a question about ${file.name}...`;
+                userInput.focus();
+            }
+        }
+        
+        function clearAttachment() {
+            currentAttachment = null;
+            attachmentPreview.style.display = 'none';
+            document.getElementById('docInput').value = '';
+            userInput.placeholder = "Ask AVA something or upload a document to analyze...";
+        }
+
+        async function sendMessage() {
+            const message = userInput.value.trim();
+            
+            // Validate input
+            if (!message && !currentAttachment) {
+                showError('Please enter a message or attach a file');
+                return;
+            }
+            
+            try {
+                setLoading(true);
+                
+                // Add user message to chat
+                if (message) {
+                    addMessage(message, true);
+                }
+                
+                let response;
+                
+                if (currentAttachment) {
+                    // If there's an attachment, use the document analysis endpoint
+                    const formData = new FormData();
+                    formData.append('file', currentAttachment);
+                    if (message) {
+                        formData.append('prompt', message);
+                    }
+                    
+                    // Add loading message
+                    const fileType = currentAttachment.name.split('.').pop().toLowerCase();
+                    const processingMsg = getProcessingMessage(fileType);
+                    addMessage(processingMsg, false);
+                    
+                    // Send request
+                    response = await fetch('/api/analyze_document', {
+                        method: 'POST',
+                        body: formData
+                    });
+                    
+                    // Clear the last message (loading message)
+                    chatMessages.removeChild(chatMessages.lastChild);
+                    
+                    // Reset attachment
+                    clearAttachment();
+                } else {
+                    // Regular chat message
+                    response = await fetch('/api/chat', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded',
+                        },
+                        body: `message=${encodeURIComponent(message)}`
+                    });
+                }
+                
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.detail || 'Request failed');
+                }
+                
+                // Get and display response
+                const data = await response.json();
+                if (data.status === 'success') {
+                    addMessage(data.response, false);
+                } else {
+                    showError(data.message || 'Failed to get a response');
+                }
+                
+            } catch (error) {
+                showError(error.message || 'An error occurred');
+            } finally {
+                setLoading(false);
+                userInput.value = '';
+                userInput.style.height = 'auto';
+                userInput.focus();
+            }
+        }
+        
+        function getProcessingMessage(fileType) {
+            const fileTypeMap = {
+                'pdf': 'Processing PDF document...',
+                'doc': 'Processing Word document...',
+                'docx': 'Processing Word document...',
+                'txt': 'Processing text file...',
+                'jpg': 'Analyzing image...',
+                'jpeg': 'Analyzing image...',
+                'png': 'Analyzing image...',
+                'mp4': 'Analyzing video... This might take a moment.',
+                'avi': 'Analyzing video... This might take a moment.',
+                'mov': 'Analyzing video... This might take a moment.',
+                'csv': 'Processing spreadsheet data...',
+                'xlsx': 'Processing spreadsheet data...',
+                'xls': 'Processing spreadsheet data...'
+            };
+            
+            return fileTypeMap[fileType] || 'Processing file...';
+        }
+    </script>
+</body>
+</html>

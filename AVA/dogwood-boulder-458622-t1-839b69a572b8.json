@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "dogwood-boulder-458622-t1",
+  "private_key_id": "839b69a572b8bd69ba1c21cf9dc3eb6efe1b6902",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCfGk6K9PG7NaSh\nt6kHSi2izwC1/pR6zaY88xTiNOwRyjYSy8NxoMKxvyA0EwmjOtp2qwEeQ0G9U5Lk\njCJpuHVdywtbAU59T8ke8+7r6+2NMKRI51aVhDXmVJmvTn95eTAn+CKg9WmntvTh\n5wmg+gdrZWvciT0+s1IlFHx1K6FuLxaxk4/GWycJub5sO0TbogpXN/I89+S5DQCI\ncZ+GRkXs4tW54vnccA1tlndGAa+Tnk8yyUxa8VOgwAr90qxxUjpHuCRGPDfoAr1x\n42Qv877shczffHAFoCOMmJjN84OKNCZ7Au8qq/eoxBa+dGWAV7KB/hNbrqlQNJk9\nny8LkFovAgMBAAECggEATEp/hhc9QLFQz7DzLskth+et5hb8mMQ65fgDuBJ7bm5h\nrnKhtb9KDJRiu0Wztd83OXb3Us0aXVARXGEr8TjfoomF2O4P9nvHK335v4wCfVTp\nOgIgHRLoC5neldbUvmlTo57S8A6typuq4hX4ooWyABgCeB4gzYuMJLallUPGJUBS\njecMRjxufQ2DuL0RASkM/YXEJ9fVExi0hk+pJibwxc/uNrz5AV5HuozYCxYQWXTu\nhoSvRArK6ziWcFoD9axPw37EWfYF4LvkUaG3SFAkk9pCa8Mh+CiTNHxrw/GZJ8pT\nbJ6og4mKn2bzZbgcYndjdWSjdaZyM0ZXUaEE9/isOQKBgQDOlRSq1JsOMmd4q6fT\notUTh8joNNUFo4x99KXZ7FOGmCkND2dvne4tLQj1io+e740jAKP3KaU0Xmch4ePK\nnh3NKnW55DOPepa/1P2r6UvFFGKFPQUKXY8QSXlKfY4DIMIJjR0jVa6q7MUgKPIU\nRgt/SCsNrg8WTjKP+W2RYhY0+QKBgQDFKZ5TPw+JldiKcpCqn2HBD4v2A/tScZGS\nR3Kj1ztTt4i04Ji66UIxHxIyOrzt+GQFKNIbvkziVETdjNH25+5DWZxVypu3IRsG\nUBko94hAU2Aome/UUioEHzRWZW9vZjx9EmA5ojrOhE2yyAk+KB8DciFh1Zscf5tE\nM1+E6e3aZwKBgAya/jLaXEfGfZfYaZo5YmUZsQGyT5lTfHwnFIOyrvoUiNS6LuaZ\nrXHmQJizBsZ8+ZC8NkUbrm/+nq5rmTnA4jKlt59LNHY51b8I4R2/U5dIAib9LTSP\ntu4YfaU0+hhoxE5O5QtF7C2T2wd2WCcyivsOTUo9Z8BFr0Inxy7K3G4JAoGAdIEB\nQ2OyBLT8/eJwxcHke7Z6F+eGbNMbF/sMLPCT6AY9y9Qjq98F9AzOLcwzs9LhF4Nl\nlGtA90SgZOI/d8zZKAcdsDxHA1GWrIZMN779TjV2TseXxji/ByyBOsQ5svQQrj9b\niPLqGPppB0nY3FfM67ZXL36PZ6mn0AcjXGD24eUCgYBHATtwIUT4gkwvlMu0C/Pt\n9uZ3Yu13JcWF/fnXOmnIH2ccN7JM2/swrVwXRKvlyRbUQXTyMp3Kd9VHndMPe1WP\nPQmUis43HHrwFWFzZutmsvey45rDOlFvWnF61gw6ZRFClyjW0zFtYALavd7sZEfx\niFa/47paeSje5KkMR6SPeQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "ava-vllm-service@dogwood-boulder-458622-t1.iam.gserviceaccount.com",
+  "client_id": "106865671051851041920",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ava-vllm-service%40dogwood-boulder-458622-t1.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
